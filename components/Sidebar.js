@@ -23,10 +23,10 @@ const DropDown = ({ name = '' }) => {
             </button>
 
             <div className={`bg-black z-10 fixed  h-10 w-40 ${dropDownElem}`}>
-                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White rounded text-bold" >1</button>
-                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White rounded text-bold" >2</button>
-                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White rounded text-bold" >3</button>
-                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White rounded text-bold" >4</button>
+                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White rounded text-bold" >Navigate </button>
+                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White rounded text-bold" >Navigate </button>
+                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White rounded text-bold" >Navigate </button>
+                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White rounded text-bold" >Navigate </button>
             </div>
 
 

@@ -13,7 +13,7 @@ import{FaAiFillAppstore} from 'react-icons/fa'
 import Burger from "./Assests/burger.png"
 function Cards() {
   return (
-            <div className=' m-auto grid lg:grid-cols-4 grid-cols-2 gap-2 p-2 w-[90vw]'>
+            <div className=' m-auto grid lg:grid-cols-4  grid-cols-1 gap-2 p-2 w-[90vw]'>
 
 
         <div className='lg:col-span-1 col-span-1 bg-white flex justify-between w-full border p-2 rounded-lg'>
@@ -22,7 +22,7 @@ function Cards() {
                 <p className='text-gray-600'>Reviews</p>
             </div>
             <p className='bg-green-200 flex justify-center items-center p-2 rounded-lg'>
-                <FaPencilAlt className='m-3'/>
+                <FaPencilAlt/>
                 </p>
         </div>  
         
@@ -32,7 +32,7 @@ function Cards() {
                 <p className='text-gray-600'>Total Revenue</p>
             </div>
             <p className='bg-green-200 flex justify-center items-center p-2 rounded-lg'>
-         <FaAppStore className='m-3'/>
+         <FaAppStore/>
             </p>
 
         </div>
@@ -45,7 +45,7 @@ function Cards() {
                 <p className='text-gray-600'>Booked Profit</p>
             </div>
             <p className='bg-green-200 flex justify-center items-center p-2 rounded-lg'>
-         <FaAlignLeft className='m-3 h-1/2'/>
+         <FaAlignLeft />
 
                 </p>
         </div>  
@@ -58,7 +58,7 @@ function Cards() {
                 <p className='text-gray-600'>Customer Count</p>
             </div>
             <p className='bg-green-200 flex justify-center items-center p-2 rounded-lg'>
-         <FaUser className='m-3 h-1/2'/>
+         <FaUser />
                         
                   </p>
         </div>  

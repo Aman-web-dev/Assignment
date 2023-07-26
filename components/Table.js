@@ -3,7 +3,7 @@
 
 import { useState } from 'react';
 
-
+import {FaChevronLeft, FaChevronRight} from 'react-icons/fa'
 
 
 const Table = () => {
@@ -54,22 +54,18 @@ const Table = () => {
 
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Calculate the number of pages based on the number of customers and itemsPerPage
   const totalPages = Math.ceil(customers.length / itemsPerPage);
 
-  // Get the current page's data based on itemsPerPage and currentPage
   const indexOfLastCustomer = currentPage * itemsPerPage;
   const indexOfFirstCustomer = indexOfLastCustomer - itemsPerPage;
   const currentCustomers = customers.slice(indexOfFirstCustomer, indexOfLastCustomer);
 
-  // Function to navigate to the next page
   const nextPage = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
     }
   };
 
-  // Function to navigate to the previous page
   const prevPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
@@ -77,27 +73,27 @@ const Table = () => {
   };
 
   return (
-    <div className="flex flex justify-center align-center my-4 mb-5 bg-white w-[90%] align-center p-4 flex-col rounded-lg m-auto  ">
+    <div className={`shrink bg-white rounded-lg p-2 my-3 m-auto mx-auto flex flex-col justify-center items-center  sm:w-[90vw] `}>
 
 
-      <div className='font-bold text-3xl m-2'> 
-        <h1 >Login List</h1>
-      </div>
 
-      <div className=' text-1xl m-2'> 
-        <p>This List Contains The  Number of Logins  On the Website </p>
-      </div>
+        <div className="bg-white w-full m-auto p-8 rounded-lg  ">
+       
 
-      <div className="bg-red-100 m-2 border border-red-500 text-red-700 px-4 py-2 rounded-lg">
+       
+        <p className="text-2xl font-bold mb-4">Customer Login Details </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum cumque itaque incidunt maxime dolorem exerc</p>
+        <div className="bg-red-100 m-2 border border-red-500 text-red-700 px-4 py-2 rounded-lg">
     <p>This is a danger message. Something went wrong!</p>
   </div>
+      </div>
 
-      <table className="border-collapse border w-auto p-4 bg-white rounded-lg h-80">
+      <table className=" border-collapse border lg:w-[80vw] p-4 m-auto shadow-md bg-white rounded-lg h-80">
         <thead>
           <tr className="bg-gray-500">
-            <th className="border border-gray-400 px-4 py-2">ID</th>
-            <th className="border border-gray-400 px-4 py-2">Name</th>
-            <th className="border border-gray-400 px-4 py-2">Email</th>
+            <th className="border border-gray-400  px-4 py-2">ID</th>
+            <th className="border border-gray-400  px-4 py-2">Name</th>
+            <th className="border border-gray-400  px-4 py-2">Email</th>
 
 
           </tr>
@@ -105,33 +101,29 @@ const Table = () => {
         <tbody>
           {currentCustomers.map((customer) => (
             <tr key={customer.id}>
-              <td className="border border-gray-400 px-4 py-2">{customer.id}</td>
-              <td className="border border-gray-400 px-4 py-2">{customer.name}</td>
-              <td className="border border-gray-400 px-4 py-2">{customer.email}</td>
+              <td className="border border-gray-400   px-4 py-2">{customer.id}</td>
+              <td className="border border-gray-400   px-4 py-2">{customer.name}</td>
+              <td className="border border-gray-400   px-4 py-2">{customer.email}</td>
 
-              
-              
-
-              
-              
+                            
             </tr>
           ))}
         </tbody>
       </table>
-      <div className="flex justify-between mt-4">
+      <div className="flex justify-between gap-2 mt-4"> 
         <button
           onClick={prevPage}
           disabled={currentPage === 1}
           className="px-4 py-2 bg-blue-500 text-white font-bold rounded-lg"
         >
-          Previous
+          <FaChevronLeft/>
         </button>
         <button
           onClick={nextPage}
           disabled={currentPage === totalPages}
           className="px-4 py-2 bg-blue-500 text-white font-bold rounded-lg"
         >
-          Next
+          <FaChevronRight/>
         </button>
       </div>
     </div>
