@@ -35,7 +35,7 @@ function mainpage() {
  
         <div className='p-4 grid md:grid-cols-3 grid-cols-1 gap-4 m-6'>
         <SmallForm/>
-      <Form style={"w-[65vw] "}/>
+      <Form style={"w-[65vw] p-1"}/>
       
     </div>
       </main>
