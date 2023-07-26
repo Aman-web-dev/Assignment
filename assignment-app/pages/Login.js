@@ -29,7 +29,7 @@ function login() {
                 className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:shadow-outline"
                 type="text"
                 id="username"
-                placeholder="Enter your username"
+                placeholder="Enter Random email"
               />
             </div>
             <div className="mb-4">
@@ -40,16 +40,19 @@ function login() {
                 className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:shadow-outline"
                 type="password"
                 id="password"
-                placeholder="Enter your password"
+                placeholder="Enter random Password"
               />
             </div>
-            <button
-              className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              type="submit"
 
+
+
+            <button
+              className="w-full bg-blue-500  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              
+             onClick={(e)=>e.preventDefault()}
 
 >
-  <Link href='/mainpage'>Login</Link>
+  <Link className="h-full w-full" href='/mainpage'>Login</Link>
               
             </button>
             <div className="my-4 flex md:flex-row flex-col flex items-center justify-center">
@@ -63,7 +66,7 @@ function login() {
           <div className="my-4 flex md:flex-row flex-col">
 
           <button
-              className="w-full px-4 py-2 bg-white-500 border border-black text-black hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="w-full px-4 py-2 bg-white-500 border border-black text-black bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
               Register Now
