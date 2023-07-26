@@ -7,7 +7,7 @@ function Navbar() {
         
         <div className=" flex flex-row gap-4 align-center justify-center">
                   <h2 className="font-bold ml-20 text-xl">Add New Post </h2>
-                  <h2 className="font-bold text-xl">Settings</h2>
+                  <h2  className="font-bold text-xl">Settings</h2>
 
         </div>
 
