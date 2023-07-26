@@ -46,15 +46,18 @@ function login() {
 
 
 
-            <button
-              className="w-full bg-blue-500  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              
-             onClick={(e)=>e.preventDefault()}
+  
+             
 
->
-  <Link className="h-full w-full" href='/mainpage'>Login</Link>
+
+  <Link className=" flex text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" href='/mainpage'><button
+              className="w-full px-4 py-2 bg-white-500 border border-black text-black bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="submit"
+            >
+              Login Now
+            </button></Link>
               
-            </button>
+    
             <div className="my-4 flex md:flex-row flex-col flex items-center justify-center">
 
             <p className="text-gray-400">--------or------</p>

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from 'react';
 
+import { FaAlignJustify, FaArrowLeft } from "react-icons/fa";
 
 const DropDown = ({ name = '' }) => {
     const [dropDownElem, setDropDown] = useState('hidden');
@@ -16,16 +17,16 @@ const DropDown = ({ name = '' }) => {
         <div className=" border-b border-white">
             <button
                 onClick={handleDropDown}
-                className="bg-gray-900 h-10 w-40 text-White rounded text-bold"
+                className="bg-black h-10 w-40 text-White rounded text-bold"
             >
                 {name}
             </button>
 
-            <div className={`bg-gray-900 z-10 fixed  h-10 w-40 ${dropDownElem}`}>
-                <button onClick={handleDropDown} className="bg-gray-900 h-10 w-40 text-White rounded text-bold" >1</button>
-                <button onClick={handleDropDown} className="bg-gray-900 h-10 w-40 text-White rounded text-bold" >2</button>
-                <button onClick={handleDropDown} className="bg-gray-900 h-10 w-40 text-White rounded text-bold" >3</button>
-                <button onClick={handleDropDown} className="bg-gray-900 h-10 w-40 text-White rounded text-bold" >4</button>
+            <div className={`bg-black z-10 fixed  h-10 w-40 ${dropDownElem}`}>
+                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White rounded text-bold" >1</button>
+                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White rounded text-bold" >2</button>
+                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White rounded text-bold" >3</button>
+                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White rounded text-bold" >4</button>
             </div>
 
 
@@ -57,13 +58,13 @@ const handleNav=()=>{
             <div>
 
             <button className="fixed bg-black m-2 p-4  text-white rounded text-bold" onClick={handleNav}>
-               Nav
+            <FaAlignJustify className="h-full w-full"/>
             </button>
 
 
-            <nav className={`flex items-center bg-gray-900 text-white fixed h-screen w-60 p-4 flex flex-col ${navbar}`} >
+            <nav className={`flex items-center bg-black text-white fixed h-screen w-60 p-4 flex flex-col ${navbar}`} >
 
-                <button className="text-2xl" onClick={handleNav}>X</button>
+                <button className="text-2xl" onClick={handleNav}><FaArrowLeft/></button>
                 <div className="border-b border-black m-0 p-0 h-20 w-50 flex items-center justify-center">
                     <button className="bg-white h-10 w-40 text-black rounded text-bold">
                         +New Item
