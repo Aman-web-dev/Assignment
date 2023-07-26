@@ -12,7 +12,7 @@ function login() {
 
 
     
-      <div className="w-[60%] h-auto  bg-white p-6 rounded-lg shadow-lg flex md:flex-row flex-col">
+      <div className="w-[90%] lg:w-[60vw]  h-auto  bg-white p-6 rounded-lg shadow-lg flex md:flex-row flex-col">
         <div className="md:w-1/2 sm-h-[0%]">
  
           <Image src={Mountain} alt="Mountains" className="w-full sm-h-[0%] h-full object-cover rounded-l-lg md:rounded-l-none md:rounded-t-lg" />

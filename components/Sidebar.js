@@ -23,10 +23,10 @@ const DropDown = ({ name = '' }) => {
             </button>
 
             <div className={`bg-black z-10 fixed  h-10 w-40 ${dropDownElem}`}>
-                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White rounded text-bold" >Navigate </button>
-                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White rounded text-bold" >Navigate </button>
-                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White rounded text-bold" >Navigate </button>
-                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White rounded text-bold" >Navigate </button>
+                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White font-bold rounded text-bold" >Navigate </button>
+                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White font-bold rounded text-bold" >Navigate </button>
+                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White font-bold rounded text-bold" >Navigate </button>
+                <button onClick={handleDropDown} className="bg-black h-10 w-40 text-White font-bold rounded text-bold" >Navigate </button>
             </div>
 
 
@@ -66,13 +66,13 @@ const handleNav=()=>{
 
                 <button className="text-2xl" onClick={handleNav}><FaArrowLeft/></button>
                 <div className="border-b border-black m-0 p-0 h-20 w-50 flex items-center justify-center">
-                    <button className="bg-white h-10 w-40 text-black rounded text-bold">
+                    <button className="bg-white font-bold h-10 w-40 text-black rounded text-bold">
                         +New Item
                     </button>
                 </div>
 
 
-                <div className=" border-b flex flex-col ">
+                <div className=" border-b flex flex-col gap-4 font-bold ">
 
 
                     <DropDown name="Dash Board" />
