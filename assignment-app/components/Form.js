@@ -4,7 +4,7 @@ function Form({style}) {
   return (
 
 
-    <div className={`shrink my-3 m-auto mx-auto flex justify-center items-center   ${style}`}>
+    <div className={`shrink my-3 m-auto mx-auto flex justify-center items-center  sm:w-[90vw] ${style}`}>
 
 
      

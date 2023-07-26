@@ -56,14 +56,14 @@ const handleNav=()=>{
 
             <div>
 
-            <button className="fixed bg-black m-2 h-10 w-10 text-white rounded text-bold" onClick={handleNav}>
-
+            <button className="fixed bg-black m-2 p-4  text-white rounded text-bold" onClick={handleNav}>
+               Nav
             </button>
 
 
             <nav className={`flex items-center bg-gray-900 text-white fixed h-screen w-60 p-4 flex flex-col ${navbar}`} >
 
-                <button onClick={handleNav}>close</button>
+                <button className="text-2xl" onClick={handleNav}>X</button>
                 <div className="border-b border-black m-0 p-0 h-20 w-50 flex items-center justify-center">
                     <button className="bg-white h-10 w-40 text-black rounded text-bold">
                         +New Item
