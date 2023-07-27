@@ -11,36 +11,36 @@ const Table = () => {
 const [pageNumber,setPageNumber ]= useState(1)
 
   const customers = [
-    { id: 1, date:  "12-07-2023", name: "Alice Johnson", email: "alijohnson@mail.com" },
-    { id: 2, date:  "12-07-2023", name: "Bob Smith", email: "bsmith@mail.com" },
-    { id: 3, date:  "12-07-2023", name: "Charlie Williams", email: "charlwilliams@mail.com" },
-    { id: 4, date:  "12-07-2023", name: "David Brown", email: "davbrown@mail.com" },
-    { id: 5, date:  "12-07-2023", name: "Ella Davis", email: "eldavis@mail.com" },
-    { id: 6, date:  "12-07-2023", name: "Frank Martinez", email: "framartinez@mail.com" },
-    { id: 7, date:  "12-07-2023", name: "Grace Anderson", email: "graanderson@mail.com" },
-    { id: 8, date:  "12-07-2023", name: "Henry Thompson", email: "henthompson@mail.com" },
-    { id: 9, date:  "12-07-2023", name: "Isabella Hernandez", email: "isabelhernandez@mail.com" },
-    { id: 10, date: "12-07-2023", name: "Jack Wilson", email: "jawilson@mail.com" },
-    { id: 11, date: "12-07-2023", name: "Katherine Lewis", email: "katherilewis@mail.com" },
-    { id: 12, date: "12-07-2023", name: "Liam Turner", email: "liturner@mail.com" },
-    { id: 13, date: "12-07-2023", name: "Mia Scott", email: "mscott@mail.com" },
-    { id: 14, date: "12-07-2023", name: "Noah Robinson", email: "norobinson@mail.com" },
-    { id: 15, date: "12-07-2023", name: "Olivia Green", email: "olivgreen@mail.com" },
-    { id: 16, date: "12-07-2023", name: "Patrick Hall", email: "patrihall@mail.com" },
-    { id: 17, date: "12-07-2023", name: "Quinn Adams", email: "quiadams@mail.com" },
-    { id: 18, date: "12-07-2023", name: "Ryan Carter", email: "rycarter@mail.com" },
-    { id: 19, date: "12-07-2023", name: "Sophia King", email: "sophking@mail.com" },
-    { id: 20, date: "12-07-2023", name: "Thomas Hall", email: "thomhall@mail.com" },
-    { id: 21, date: "12-07-2023", name: "Uma Adams", email: "uadams@mail.com" },
-    { id: 22, date: "12-07-2023", name: "Vincent Baker", email: "vincebaker@mail.com" },
-    { id: 23, date: "12-07-2023", name: "Willow Lee", email: "willlee@mail.com" },
-    { id: 24, date: "12-07-2023", name: "Xavier Hall", email: "xavihall@mail.com" },
-    { id: 25, date: "12-07-2023", name: "Yara Adams", email: "yaadams@mail.com" },
-    { id: 26, date: "12-07-2023", name: "Zane Lopez", email: "zalopez@mail.com" },
-    { id: 27, date: "12-07-2023", name: "Ava Campbell", email: "acampbell@mail.com" },
-    { id: 28, date: "12-07-2023", name: "Benjamin White", email: "benjamwhite@mail.com" },
-    { id: 29, date: "12-07-2023", name: "Charlotte Turner", email: "charlotturner@mail.com" },
-    { id: 30, date: "12-07-2023", name: "Daniel Martin", email: "danimartin@mail.com" },
+    { id: 1, date:  "12-07-2023", name: "Alice Johnson", email: "alijo@mail.com" },
+    { id: 2, date:  "12-07-2023", name: "Bob Smith", email: "b@mail.com" },
+    { id: 3, date:  "12-07-2023", name: "Charlie Williams", email: "charlwil@mail.com" },
+    { id: 4, date:  "12-07-2023", name: "David Brown", email: "dav@mail.com" },
+    { id: 5, date:  "12-07-2023", name: "Ella Davis", email: "el@mail.com" },
+    { id: 6, date:  "12-07-2023", name: "Frank Martinez", email: "framar@mail.com" },
+    { id: 7, date:  "12-07-2023", name: "Grace Anderson", email: "graand@mail.com" },
+    { id: 8, date:  "12-07-2023", name: "Henry Thompson", email: "hentho@mail.com" },
+    { id: 9, date:  "12-07-2023", name: "Isabella Hernandez", email: "isabelhern@mail.com" },
+    { id: 10, date: "12-07-2023", name: "Jack Wilson", email: "jaw@mail.com" },
+    { id: 11, date: "12-07-2023", name: "Katherine Lewis", email: "katheri@mail.com" },
+    { id: 12, date: "12-07-2023", name: "Liam Turner", email: "lit@mail.com" },
+    { id: 13, date: "12-07-2023", name: "Mia Scott", email: "m@mail.com" },
+    { id: 14, date: "12-07-2023", name: "Noah Robinson", email: "norob@mail.com" },
+    { id: 15, date: "12-07-2023", name: "Olivia Green", email: "oliv@mail.com" },
+    { id: 16, date: "12-07-2023", name: "Patrick Hall", email: "patr@mail.com" },
+    { id: 17, date: "12-07-2023", name: "Quinn Adams", email: "qui@mail.com" },
+    { id: 18, date: "12-07-2023", name: "Ryan Carter", email: "ryc@mail.com" },
+    { id: 19, date: "12-07-2023", name: "Sophia King", email: "sop@mail.com" },
+    { id: 20, date: "12-07-2023", name: "Thomas Hall", email: "tho@mail.com" },
+    { id: 21, date: "12-07-2023", name: "Uma Adams", email: "u@mail.com" },
+    { id: 22, date: "12-07-2023", name: "Vincent Baker", email: "vince@mail.com" },
+    { id: 23, date: "12-07-2023", name: "Willow Lee", email: "wi@mail.com" },
+    { id: 24, date: "12-07-2023", name: "Xavier Hall", email: "xav@mail.com" },
+    { id: 25, date: "12-07-2023", name: "Yara Adams", email: "ya@mail.com" },
+    { id: 26, date: "12-07-2023", name: "Zane Lopez", email: "za@mail.com" },
+    { id: 27, date: "12-07-2023", name: "Ava Campbell", email: "acam@mail.com" },
+    { id: 28, date: "12-07-2023", name: "Benjamin White", email: "benjam@mail.com" },
+    { id: 29, date: "12-07-2023", name: "Charlotte Turner", email: "charlott@mail.com" },
+    { id: 30, date: "12-07-2023", name: "Daniel Martin", email: "danim@mail.com" },
   ];
     const itemsPerPage=10;
 
@@ -83,7 +83,7 @@ const [pageNumber,setPageNumber ]= useState(1)
   </div>
       </div>
 
-      <table className=" border-collapse border lg:w-[80vw]  p-4 m-4 shadow-md bg-white rounded-lg h-80">
+      <table className=" border-collapse border lg:w-[80vw] w-[70vw]  p-4 m-4 shadow-md bg-white rounded-lg h-80">
         <thead>
           <tr className="bg-gray-500">
             <th className="border border-gray-400  px-4 py-2">ID</th>
