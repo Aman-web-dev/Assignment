@@ -1,4 +1,6 @@
 
+import {FaLandmark,FaIdCard} from 'react-icons/fa'
+
 
 function Form({style}) {
   return (
@@ -15,7 +17,13 @@ function Form({style}) {
           <div>
         <p className="text-2xl font-bold mb-4">Customer Auth Form </p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum cumque itaque incidunt maxime dolorem exerc</p>
-        
+        <div className=' grid lg:grid-cols-2  grid-cols-2 gap-2 p-2 lg:w-[30vw]'>
+                  <div className='border-2 rounded-lg border-black my-4 font-bold  p-2 flex flex-row align-center justify-between '>{<FaLandmark className='w-10 h-10 mr-2'/>}<p className='font-bold text-xl my-auto'>House</p></div>
+
+
+                  <div className='border-2 rounded-lg border-black my-4 font-bold  p-2 flex flex-row align-center justify-between '>{<FaIdCard className='w-10 h-10 mr-2'/>}<p className='font-bold text-xl my-auto'>Card</p></div>
+        </div>
+
       </div>
 
 
