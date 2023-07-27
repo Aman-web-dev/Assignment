@@ -21,8 +21,8 @@ function Cards() {
                 <p className='text-xl font-bold'>1,437,</p>
                 <p className='text-gray-600'>Reviews</p>
             </div>
-            <p className='bg-green-200 flex justify-center items-center p-2 rounded-lg'>
-                <FaPencilAlt/>
+            <p className='   flex justify-center items-center p-2 rounded-lg'>
+                <FaPencilAlt className='w-10 h-10'/>
                 </p>
         </div>  
         
@@ -31,8 +31,8 @@ function Cards() {
                 <p className='text-xl font-bold'>₹1,437,876</p>
                 <p className='text-gray-600'>Total Revenue</p>
             </div>
-            <p className='bg-green-200 flex justify-center items-center p-2 rounded-lg'>
-         <FaAppStore/>
+            <p className=' flex justify-center items-center p-2 rounded-lg'>
+         <FaAppStore className='w-10 h-10'/>
             </p>
 
         </div>
@@ -44,8 +44,8 @@ function Cards() {
                 <p className='text-xl font-bold'>₹1,437,</p>
                 <p className='text-gray-600'>Booked Profit</p>
             </div>
-            <p className='bg-green-200 flex justify-center items-center p-2 rounded-lg'>
-         <FaAlignLeft />
+            <p className=' flex justify-center items-center p-2 rounded-lg'>
+         <FaAlignLeft className='w-10 h-10' />
 
                 </p>
         </div>  
@@ -57,8 +57,8 @@ function Cards() {
                 <p className='text-xl font-bold'>1,437,876</p>
                 <p className='text-gray-600'>Customer Count</p>
             </div>
-            <p className='bg-green-200 flex justify-center items-center p-2 rounded-lg'>
-         <FaUser />
+            <p className=' flex justify-center items-center p-2 rounded-lg'>
+         <FaUser className='w-10 h-10'/>
                         
                   </p>
         </div>  
