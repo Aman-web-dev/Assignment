@@ -1,13 +1,9 @@
 import React from 'react';
-
 import Head from 'next/head';
-import Image from 'next/image';
-
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import Card from '../components/Cards';
 import Form from '../components/Form';
-
 import SmallForm from '../components/SmallForm'
 import Table from '../components/Table';
 
@@ -15,8 +11,6 @@ import Table from '../components/Table';
 
 function mainpage() {
   return (
-    
-      
     <>
       <Head>
         <title>Admin Dashboard</title>

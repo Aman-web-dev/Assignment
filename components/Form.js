@@ -1,32 +1,21 @@
+import { FaLandmark, FaIdCard } from 'react-icons/fa'
 
-import {FaLandmark,FaIdCard} from 'react-icons/fa'
 
-
-function Form({style}) {
+function Form({ style }) {
   return (
 
-
     <div className={`shrink my-3 mb-4 m-auto mx-auto flex justify-center items-center  sm:w-[90vw] ${style}`}>
-
-
-     
       <div className=" w-[90%] flex items-center justify-center p-auto">
         <div className="bg-white w-full m-auto p-8 rounded-lg shadow-md ">
           <form>
-
-          <div>
-        <p className="text-2xl font-bold mb-4">Customer Auth Form </p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum cumque itaque incidunt maxime dolorem exerc</p>
-        <div className=' grid lg:grid-cols-2  grid-cols-2 gap-2 p-2 lg:w-[30vw]'>
-                  <div className='border-2 rounded-lg border-black my-4 font-bold  p-2 flex flex-row align-center justify-between '>{<FaLandmark className='w-10 h-10 mr-2'/>}<p className='font-bold text-xl my-auto'>House</p></div>
-
-
-                  <div className='border-2 rounded-lg border-black my-4 font-bold  p-2 flex flex-row align-center justify-between '>{<FaIdCard className='w-10 h-10 mr-2'/>}<p className='font-bold text-xl my-auto'>Card</p></div>
-        </div>
-
-      </div>
-
-
+            <div>
+              <p className="text-2xl font-bold mb-4">Customer Auth Form </p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum cumque itaque incidunt maxime dolorem exerc</p>
+              <div className=' grid lg:grid-cols-2  grid-cols-2 gap-2 p-2 lg:w-[30vw]'>
+                <div className='border-2 rounded-lg border-black my-4 font-bold  p-2 flex flex-row align-center justify-between '>{<FaLandmark className='w-10 h-10 mr-2' />}<p className='font-bold text-xl my-auto'>House</p></div>
+                <div className='border-2 rounded-lg border-black my-4 font-bold  p-2 flex flex-row align-center justify-between '>{<FaIdCard className='w-10 h-10 mr-2' />}<p className='font-bold text-xl my-auto'>Card</p></div>
+              </div>
+            </div>
             <div className="mb-4">
               <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
                 Name
@@ -34,54 +23,38 @@ function Form({style}) {
               <input className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" type="text" id="name" name="name" placeholder="Enter your name"
               />
             </div>
-
-
-
-
-
             <div className="mb-4 d flex flex-row">
 
               <div className="flex flex-col mx-2">
-              <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
-                Country
-              </label>
-              <select className="block w-full px-4 py-2 rounded-md border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:outline-none">
-    <option value="india">India</option>
-    <option value="Usa">USA</option>
-    <option value="Australlia">Australlia</option>
-    <option value="Canada">Canada</option>
-  </select>
-                         
-                         </div>
+                <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
+                  Country
+                </label>
+                <select className="block w-full px-4 py-2 rounded-md border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:outline-none">
+                  <option value="india">India</option>
+                  <option value="Usa">USA</option>
+                  <option value="Australlia">Australlia</option>
+                  <option value="Canada">Canada</option>
+                </select>
 
-
-
-
-
-
-              <div className='flex flex-col mx-2'>
-              <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
-                Locality
-              </label>
-              <input className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" type="text"  placeholder="Enter Address Line One "
-              />
               </div>
 
               <div className='flex flex-col mx-2'>
-              <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
-                Name
-              </label>
-              <input className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" type="text"  placeholder="Enter your name"
-              />
+                <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
+                  Locality
+                </label>
+                <input className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" type="text" placeholder="Enter Address Line One "
+                />
+              </div>
+
+              <div className='flex flex-col mx-2'>
+                <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
+                  Name
+                </label>
+                <input className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" type="text" placeholder="Enter your name"
+                />
               </div>
 
             </div>
-
-
-
-
-
-
 
             <div className="mb-4">
               <label className="block text-gray-700 font-bold mb-2" htmlFor="email">
